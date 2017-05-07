@@ -1,6 +1,6 @@
 # Gender-classification
 Classifies gender based on height width and shoe size
-Classifies gender using 7 classifiers named:
+Classifiers used:
 1. Perceptron
 2. Decision Tree
 3. Linear SVM
