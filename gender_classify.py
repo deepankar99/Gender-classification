@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.metrics import accuracy_score
 
 classifiers = [Perceptron(),DecisionTreeClassifier(),SVC(),KNeighborsClassifier(),QuadraticDiscriminantAnalysis(),GaussianNB(),
-               RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),AdaBoostClassifier()]
+               RandomForestClassifier(),AdaBoostClassifier()]
 
 names = ["Perceptron","Decision Tree","Linear SVM","Nearest Neighbors","QDA","Gaussian Process","Random Forest","AdaBoost"]
    
@@ -28,4 +28,5 @@ for i in range(len(classifiers)):
 
 # The best classifier
 index = np.argmax(acc)
+print prediction[index]
 print 'Best classifier is ',str(classifiers[index]).rsplit('(',1)[0]
